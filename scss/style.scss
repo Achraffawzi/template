@@ -1,0 +1,153 @@
+@import 'config';
+
+
+/* Global Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $lightgrey;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+    line-height: 1;
+}
+
+/* Custom Styling */
+
+/* Start Carousel */
+.carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    background-color: $primary-color;
+    border-radius: 50%;
+}
+
+.carousel-inner {
+    height: 600px;
+
+    .carousel-item {
+        height: 100%;
+
+        img {
+            height: 100%;
+        }
+    }
+}
+
+// .header {
+//     height: 600px;
+//     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/airConditioner.jpg);
+//     background-repeat: no-repeat;
+//     background-position: center center;
+//     background-size: cover;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     text-align: center;
+
+//     .header__title {
+//         font-size: 9vw;
+//         font-weight: bold;
+//         margin-bottom: 1rem;
+//         color: $primary-color;
+//     }
+
+//     .header__description {
+//         font-size: 20px;
+//         font-weight: bold;
+//         color: dimgray;
+//         color: $primary-color;
+//     }
+// }
+
+@media(max-width: 767px) {
+    .carousel-inner {
+        height: 60vh;
+        justify-content: space-around;
+    }
+}
+
+/* End Carousel */
+
+/* Start Contact Us */
+
+.fullBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+.contactUs {
+    padding: 50px 0;
+
+    .contactUs__title {
+        margin-bottom: 20px;
+        font-size: 2.3rem;
+        padding-bottom: 5px;
+        border-bottom: 4px solid $primary-color;
+        display: inline-block;
+    }
+
+    .titleDescription {
+        margin-bottom: 40px;
+    }
+
+    .contact {
+        .contactUs__icon {
+            font-size: 2rem;
+            background-color: $primary-color;
+            color: #fff;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            border-radius: 50%;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .contactUs__description {
+            font-size: 1.2rem;
+            font-size: 700;
+        }
+    }
+}
+
+.arabic {
+    background-color: $primary-color;
+    color: #fff;
+
+    .contactUs__titleAr {
+        padding-bottom: 5px!important;
+        color: #fff;
+        border-bottom: 4px solid #fff!important;
+        margin-bottom: 20px;
+        font-size: 2.3rem;
+        display: inline-block;
+    }
+
+    .contactUs__icon {
+        background-color: #fff!important;
+        color: $primary-color!important;
+    }
+}
+
+@media(max-width: 767px) {
+
+    .fullBody {
+        grid-template-columns: 1fr;
+    }
+
+    .contactUs__description {
+        margin-bottom: 60px;
+    }
+}
+/* End Contact Us */
