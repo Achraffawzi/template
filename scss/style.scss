@@ -89,8 +89,22 @@ h1, h2, h3, h4, h5, p {
 
 @media(max-width: 767px) {
     .carousel-inner {
-        height: 60vh;
+        height: 40vh;
         justify-content: space-around;
+    }
+
+    .carousel-caption {
+        bottom: 50px;
+        padding-top: 90px;
+        padding-bottom: 90px;
+    
+        .caption-title {
+            font-size: 2.3rem;
+        }
+    
+        .caption-description {
+            font-size: 20px;
+        }
     }
 }
 
